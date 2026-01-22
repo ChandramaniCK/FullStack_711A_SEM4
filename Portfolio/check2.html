@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandramani Kumar - CSE Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: black;
+            background: lightgray;
+        }
+
+        nav {
+            background: darkslateblue;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background: slateblue;
+            border-radius: 5px;
+        }
+
+        header {
+            background: darkslateblue;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header img {
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0.5rem 0;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+        }
+
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem 0;
+        }
+
+        h2 {
+            color: darkslateblue;
+            border-bottom: 3px solid darkslateblue;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            color: navy;
+            margin: 1.5rem 0 0.8rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        table th {
+            background: darkslateblue;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid lightgray;
+        }
+
+        table tr:hover {
+            background: whitesmoke;
+        }
+
+        article {
+            background: whitesmoke;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            border-left: 4px solid darkslateblue;
+        }
+
+        article ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        article li {
+            margin: 0.5rem 0;
+        }
+
+        a {
+            color: darkslateblue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            background: whitesmoke;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        fieldset {
+            border: 2px solid darkslateblue;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        legend {
+            color: darkslateblue;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid gray;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background: darkslateblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 5px 0 0;
+        }
+
+        input[type="submit"]:hover {
+            background: slateblue;
+        }
+
+        input[type="reset"] {
+            background: gray;
+        }
+
+        input[type="reset"]:hover {
+            background: dimgray;
+        }
+
+        footer {
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: lightgray;
+            margin: 2rem 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="IMG-20251008-WA0023.jpg" alt="Profile Picture" width="180" height="180">
+        <h1>Chandramani Kumar</h1>
+        <p>Bachelor of Engineering - Computer Science & Engineering</p>
+        <p>Second Year Student | Aspiring Software Developer</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a second-year CSE student passionate about building scalable applications and solving complex problems through code. My interests include full-stack development, machine learning, and cloud computing. I focus on writing clean, maintainable code while continuously learning new technologies.</p>
+            <p>When I'm not coding, I work on open-source projects, participate in hackathons, and keep up with the latest tech trends. I'm actively seeking opportunities to apply my skills through internships or entry-level positions.</p>
+        </section>
+
+        <hr>
+
+        <section id="education">
+            <h2>Education</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Degree/Qualification</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>CGPA/Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.E. in Computer Science</td>
+                        <td>Chandigarh University, Punjab</td>
+                        <td>2024 - 2028</td>
+                        <td>8.77 CGPA</td>
+                    </tr>
+                    <tr>
+                        <td>Higher Secondary (XII)</td>
+                        <td>Central Hindu Boys School, UP</td>
+                        <td>2022</td>
+                        <td>86.4%</td>
+                    </tr>
+                    <tr>
+                        <td>Secondary (X)</td>
+                        <td>Mount Litera Zee School, Bihar</td>
+                        <td>2020</td>
+                        <td>97%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Programming Languages</strong></td>
+                        <td>Python, Java, C++, JavaScript, SQL</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Web Development</strong></td>
+                        <td>HTML5, CSS3, React.js, Node.js, Express.js, MongoDB</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Database Management</strong></td>
+                        <td>MySQL, PostgreSQL, MongoDB, Firebase</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tools & Frameworks</strong></td>
+                        <td>Git, GitHub, VS Code, Docker, Postman, Bootstrap</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Other Skills</strong></td>
+                        <td>Data Structures, Algorithms, OOP, REST APIs, Agile Development</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <article>
+                <h3>CinemaHub</h3>
+                <p><strong>Duration:</strong> Jan 2026 - Present</p>
+                <p><strong>Technologies:</strong> Java, React.js, MySQL, Spring Boot</p>
+                <p><strong>Description:</strong> Developed a full-stack online movie ticket booking system featuring user authentication, payment integration, seat auto-locking, and comprehensive booking tracking.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Built backend using Spring Boot and MySQL with proper database relationships</li>
+                    <li>Implemented user authentication, movie listing, and real-time ticket booking</li>
+                    <li>Designed RESTful APIs following MVC architecture</li>
+                    <li>Used DTOs for clean data transfer between layers</li>
+                </ul>
+                <p><a href="https://github.com/Chandramani-Kumar822" target="_blank">View on GitHub</a></p>
+            </article>
+
+            <article>
+                <h3>Student Attendance Management System</h3>
+                <p><strong>Duration:</strong> Aug 2025 - Oct 2025</p>
+                <p><strong>Technologies:</strong> Python, Flask, SQLite, HTML, CSS, JavaScript</p>
+                <p><strong>Description:</strong> Created a web-based attendance tracking system for educational institutions with role-based access for students, teachers, and administrators.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>QR code-based attendance marking for quick check-ins</li>
+                    <li>Automated attendance reports and analytics dashboard</li>
+                    <li>Email notifications for low attendance alerts</li>
+                    <li>Department-wise and subject-wise attendance tracking</li>
+                </ul>
+                <p><a href="https://github.com/Chandramani-Kumar822" target="_blank">View on GitHub</a></p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="experience">
+            <h2>Experience & Internships</h2>
+
+            <article>
+                <h3>Technical Team Member</h3>
+                <p><strong>College Coding Club</strong> | Sep 2024 - Present</p>
+                <ul>
+                    <li>Organized coding workshops and hackathons for over 200 students</li>
+                    <li>Mentored junior students in data structures and algorithms</li>
+                    <li>Conducted weekly coding sessions on competitive programming</li>
+                    <li>Managed the club's GitHub repository and technical documentation</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="achievements">
+            <h2>Achievements & Certifications</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Achievement/Certification</th>
+                        <th>Issuing Organization</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Winner - College Level Hackathon</td>
+                        <td>Chandigarh University</td>
+                        <td>March 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Full Stack Web Development Certification</td>
+                        <td>Coursera (University of Michigan)</td>
+                        <td>January 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Python for Data Science</td>
+                        <td>IBM (Cognitive Class)</td>
+                        <td>August 2024</td>
+                    </tr>
+                    <tr>
+                        <td>5 Star Problem Solver - Python</td>
+                        <td>HackerRank</td>
+                        <td>June 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <hr>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm actively looking for internship and full-time opportunities. Feel free to reach out!</p>
+            
+            <table border="1">
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td><a href="mailto:manichandra6014@email.com">manichandra6014@email.com</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td>+91 88090 84949</td>
+                </tr>
+                <tr>
+                    <td><strong>LinkedIn:</strong></td>
+                    <td><a href="https://www.linkedin.com/in/chandramani-kumar-5a997b348/" target="_blank">linkedin.com/in/Chandramani-kumar</a></td>
+                </tr>
+                <tr>
+                    <td><strong>GitHub:</strong></td>
+                    <td><a href="https://github.com/Chandramani-Kumar822" target="_blank">github.com/Chandramani-kumar822</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Location:</strong></td>
+                    <td>Kharar, Punjab, India</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Send me a message</legend>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <br>
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Clear Form">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chandramani Kumar. All rights reserved.</p>
+        <p>Last updated: January 2026</p>
+    </footer>
+</body>
+</html>
