@@ -1,0 +1,278 @@
+/* Global Reset & Base Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Header & Navigation */
+
+header {
+    background-color: navy;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b3dbff;
+}
+
+
+/* ===============================
+   Auth Buttons (Login / Register)
+   =============================== */
+
+.auth-links a {
+    margin-left: 0.6rem;
+    padding: 0.45rem 1.3rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.outline-btn {
+    border: 1px solid #fff;
+}
+
+.outline-btn:hover {
+    background: #fff;
+    color: navy;
+}
+
+.filled-btn {
+    background: #fff;
+    color: navy;
+    font-weight: 500;
+}
+
+
+/* ===============================
+   Hero Section
+   =============================== */
+
+#hero {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 4rem 2rem;
+
+    text-align: center;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        to right,
+        #cce7ff,
+        #eaf4ff
+    );
+}
+
+#hero h2 {
+    font-size: 2.4rem;
+    color: navy;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    color: #003366;
+}
+
+#hero form {
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#hero input,
+#hero select {
+    padding: 0.75rem;
+    min-width: 200px;
+
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+#hero button {
+    padding: 0.75rem 1.6rem;
+
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #001f4d;
+}
+
+
+/* ===============================
+   Common Section Styling
+   =============================== */
+
+section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+section h2 {
+    color: navy;
+    margin-bottom: 1.6rem;
+    font-size: 2rem;
+}
+
+
+/* ===============================
+   Grid Utilities
+   =============================== */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+
+/* ===============================
+   Cards (Jobs, Categories, Services)
+   =============================== */
+
+.job-card,
+.category-card,
+.service-card {
+    background: #fff;
+    padding: 1.6rem;
+
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.job-card:hover,
+.category-card:hover,
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.job-card h3 {
+    color: navy;
+    margin-bottom: 0.4rem;
+}
+
+.job-card .company {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.job-card a {
+    display: inline-block;
+    margin-top: 1rem;
+
+    background: navy;
+    color: #fff;
+    padding: 0.45rem 1.3rem;
+    border-radius: 5px;
+    text-decoration: none;
+
+    transition: background 0.3s ease;
+}
+
+.job-card a:hover {
+    background: #001f4d;
+}
+
+
+/* ===============================
+   Footer
+   =============================== */
+
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem;
+
+    background: navy;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+/* ===============================
+   Responsive Design
+   =============================== */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    #hero h2 {
+        font-size: 1.9rem;
+    }
+}
