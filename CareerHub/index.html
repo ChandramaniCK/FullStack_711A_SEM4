@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareerHub - Find Your Dream Job</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -28,14 +28,12 @@
 </header>
 
 <main>
-
-    <!-- Hero Section -->
     <section id="hero">
         <h2>Discover Over 50,000+ Career Opportunities</h2>
         <p>Connect with leading employers and take the next step in your professional journey</p>
 
         <form>
-            <input type="text" placeholder="Job title or keyword" required>
+            <input type="text" placeholder="Job title or keyword">
             <input type="text" placeholder="Location">
             <select>
                 <option value="">Experience Level</option>
@@ -48,17 +46,33 @@
         </form>
     </section>
 
-    <!-- Featured Jobs -->
+    <section id="add-job">
+        <h2>Add Job</h2>
+
+        <form id="jobForm">
+            <input type="text" id="title" placeholder="Job Title">
+            <input type="text" id="company" placeholder="Company Name">
+            <input type="text" id="location" placeholder="Location">
+            <button type="submit">Add Job</button>
+        </form>
+        <p id="error"></p>
+    </section>
+
     <section id="featured-jobs">
         <h2>Featured Positions</h2>
-        <div class="grid-2">
+
+        <p id="jobCount">Total Jobs: 4</p>
+
+        <div class="grid-2" id="jobContainer">
             <article class="job-card">
                 <h3>Senior Software Engineer</h3>
                 <p class="company">TechCorp Solutions</p>
                 <p>Bangalore, Karnataka</p>
                 <p>5–8 Years | Full-time</p>
                 <p>Java, Microservices, Cloud</p>
-                <a href="#">View Details</a>
+
+                <button class="applyBtn">Apply</button>
+                <button class="deleteBtn">Delete</button>
             </article>
 
             <article class="job-card">
@@ -67,7 +81,9 @@
                 <p>Mumbai, Maharashtra</p>
                 <p>3–6 Years | Full-time</p>
                 <p>Digital Marketing, Strategy</p>
-                <a href="#">View Details</a>
+
+                <button class="applyBtn">Apply</button>
+                <button class="deleteBtn">Delete</button>
             </article>
 
             <article class="job-card">
@@ -76,7 +92,9 @@
                 <p>Pune, Maharashtra</p>
                 <p>2–4 Years | Full-time</p>
                 <p>SQL, Python, Power BI</p>
-                <a href="#">View Details</a>
+
+                <button class="applyBtn">Apply</button>
+                <button class="deleteBtn">Delete</button>
             </article>
 
             <article class="job-card">
@@ -85,25 +103,14 @@
                 <p>Delhi NCR</p>
                 <p>4–7 Years | Full-time</p>
                 <p>Talent Strategy, HR Ops</p>
-                <a href="#">View Details</a>
+
+                <button class="applyBtn">Apply</button>
+                <button class="deleteBtn">Delete</button>
             </article>
+
         </div>
     </section>
 
-    <!-- Categories -->
-    <section id="categories">
-        <h2>Explore by Category</h2>
-        <div class="grid-3">
-            <div class="category-card">IT<br><span>12,450 Jobs</span></div>
-            <div class="category-card">Finance<br><span>8,320 Jobs</span></div>
-            <div class="category-card">Healthcare<br><span>5,670 Jobs</span></div>
-            <div class="category-card">Marketing<br><span>9,840 Jobs</span></div>
-            <div class="category-card">Engineering<br><span>7,290 Jobs</span></div>
-            <div class="category-card">Education<br><span>4,180 Jobs</span></div>
-        </div>
-    </section>
-
-    <!-- Services -->
     <section id="services">
         <h2>Our Services</h2>
         <div class="grid-3">
@@ -127,6 +134,7 @@
 <footer>
     <p>© 2024 CareerHub. All Rights Reserved.</p>
 </footer>
+<script src="js/main.js"></script>
 
 </body>
 </html>

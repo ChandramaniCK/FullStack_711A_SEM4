@@ -276,3 +276,88 @@ footer {
         font-size: 1.9rem;
     }
 }
+
+/* ===============================
+   ADDED: Add Job Section Styling
+   =============================== */
+#add-job {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+#add-job form {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#add-job input {
+    flex: 1;
+    padding: 0.7rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#add-job button {
+    padding: 0.7rem 1.5rem;
+    background: navy;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Error message */
+#error {
+    color: red;
+    margin-top: 0.8rem;
+}
+
+
+/* ===============================
+   ADDED: Job Count Styling
+   =============================== */
+#jobCount {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+
+/* ===============================
+   ADDED: Apply & Delete Buttons
+   =============================== */
+.applyBtn {
+    background: navy;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.applyBtn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.deleteBtn {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* ===============================
+   ADDED: Hover Effect via JS
+   =============================== */
+.job-card.hovered {
+    border: 2px solid navy;
+}
