@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time Demo</title>
+
+</head>
+<body>
+    <div class="container">
+        <button id="showDateTimeBtn">Show Date and Time</button>
+        <div id="dateTimeDisplay"></div>
+    </div>
+
+    <script>
+        const button = document.getElementById('showDateTimeBtn');
+        const display = document.getElementById('dateTimeDisplay');
+
+        button.addEventListener('click', () => {
+            const now = new Date();
+            display.textContent = now.toLocaleString();
+        });
+    </script>
+</body>
+</html>
